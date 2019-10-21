@@ -1,29 +1,4 @@
+<app-navigation></app-navigation>
+<router-outlet></router-outlet>
 
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-          <span class="glyphicon glyphicon-apple" style="color:#5bdb48"></span>
-          Movie Min App
-        </a>
-      </div>
-    </div>
-  </nav>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3" *ngFor="let movie of movies">
-        <div class="card" style="width: 18rem;">
-          <img src="{{movie.image}}" class="card-img-top" alt="movie1">
-          <div class="card-body">
-            <h5 class="card-title">{{movie.name}}</h5>
-            <p class="card-text">An exciting movie.</p>
-            <p >{{ movie.year}}</p>
-            <a href="#" class="btn btn-primary">More</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <app-app-movie></app-app-movie>
-  </div>
