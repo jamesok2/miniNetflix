@@ -4,13 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppMovieComponent } from './app-movie/app-movie.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { MoviesComponent } from './movies/movies.component';
+import { NavigationComponent } from './navigation/navigation.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AppMovieComponent,
-    NavbarComponent
+    MoviesComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

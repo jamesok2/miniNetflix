@@ -1,18 +1,2 @@
-<app-navbar></app-navbar>
-<div class="container">
-    <div class="row">
-        <div *ngFor="let movie of movies" class="col-md-6">
-            <div class="card" style="min-height: 30rem; margin-bottom: 20px;">
-                <img src="{{movie.image}}" class="card-img-top" alt="movie1">
-                <div class="card-body">
-                    <h5 class="card-title">{{movie.name}}</h5>
-                    <p class="card-text">An exciting movie.</p>
-                    <p>{{ movie.year}}</p>
-                    <a href="#" class="btn btn-primary">More</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <app-app-movie></app-app-movie>
-</div>
+<app-navigation></app-navigation>
+<router-outlet></router-outlet>
