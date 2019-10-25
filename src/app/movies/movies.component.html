@@ -1,18 +1,19 @@
- <div class="container">
+<div class="container">
     <div class="row">
-      <div class="col-md-3" *ngFor="let movie of movies">
-        <a [routerLink]="['/movies', movie.id]">
-        <div class="card" style="width: 18rem;">
-          <img src="{{movie.image}}" class="card-img-top" alt="movie1">
-          <div class="card-body">
-            <h5 class="card-title">{{movie.name}}</h5>
-            <p class="card-text">An exciting movie.</p>
-            <p >{{ movie.year}}</p>
-          </div>
-        </div>
-      </a>
-      <button class="btn btn-success">Favourite</button>
-      </div>
-    </div>
-  </div>
+        <div class="col-md-6" *ngFor="let movie of movies">
+            <a [routerLink]="['/movies', movie.id]">
+                <div class="card card-local">
+                    <img src="{{movie.image}}" class="card-img-top" alt="movie Image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{movie.name}}</h5>
+                        <p class="card-text">An exciting movie.</p>
+                        <p>{{ movie.year}}</p>
+                        <button class="btn btn-success float-right">Add to Favourite</button>
+                    </div>
+                </div>
 
+            </a>
+
+        </div>
+    </div>
+</div>
